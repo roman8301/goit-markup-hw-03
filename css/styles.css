@@ -125,6 +125,10 @@ p {
   color: var(--blue-color);
 }
 
+.site-nav .nav-link.current {
+  color: var(--blue-color);
+}
+
 /* MAIN */
 
 /* hero */
