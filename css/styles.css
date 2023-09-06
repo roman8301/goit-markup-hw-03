@@ -203,21 +203,37 @@ p {
 
 /* FOOTER */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--bg-color);
+}
+
+/* logo */
+.site-logo.logo {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .logo-white {
   color: var(--white-color);
 }
 
-.adres-text {
+/* adress */
+.adress-text {
   font-style: normal;
   line-height: 1.71;
 
   color: var(--white-color);
 }
 
+.adress-text:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .address-link {
+  display: block;
+
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
