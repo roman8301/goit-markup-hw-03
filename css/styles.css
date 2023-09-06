@@ -136,7 +136,15 @@ p {
   background-color: var(--bg-color);
   color: var(--white-color);
 }
+
+.hero .indent {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .hero-title {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -144,10 +152,19 @@ p {
   text-align: center;
   text-transform: uppercase;
 }
+
 .hero-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 32px;
+
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
+
+  border: 1px solid var(--blue-color);
+  border-radius: 4px;
+
   cursor: pointer;
 }
 
