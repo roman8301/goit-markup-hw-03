@@ -11,7 +11,6 @@ html {
 :root {
   --blue-color: #2196f3;
   --btn-hover-color: #188ce8;
-  --btn-filter-color: #f5f4fa;
   --logo-black: #000;
   --bg-color-team: #f5f4fa;
   --bg-color: #2f303a;
@@ -159,22 +158,19 @@ p {
   margin: 0 auto;
   padding: 10px 30px;
 
+  background-color: var(--blue-color);
+
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--white-color);
 
   border: 1px solid var(--blue-color);
   border-radius: 4px;
 
   cursor: pointer;
-}
-
-.hero .btn,
-.filter-btn:hover {
-  font-size: 16px;
-  text-align: center;
-  background-color: var(--blue-color);
-  color: var(--white-color);
 }
 
 .hero .btn:hover {
@@ -183,7 +179,7 @@ p {
 }
 
 /* our features */
-.section-heading {
+.section-title {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -208,7 +204,7 @@ p {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.42px;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
@@ -311,25 +307,67 @@ p {
 }
 
 /* MAIN PORTFOLIO */
-
+.main {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* filter */
-.filter-btn {
+.filter {
+  margin-bottom: 50px;
+}
+
+.section-title {
+  display: none;
+}
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+}
+
+.filter .item {
+}
+
+.filter .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.filter .btn {
+  display: inline-block;
+
+  padding: 6px 22px;
+  border: 0px solid transparent;
+  border-radius: 4px;
+
+  background-color: var(--bg-color-team);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  letter-spacing: 0.03em;
   text-align: center;
+  color: var(--primary-text-color);
+
   cursor: pointer;
+}
+
+.filter .btn:hover {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08),
+    0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 /* gallary */
 
-.card-title {
+.gallary .title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.card-description {
+
+.gallary .description {
   font-size: 16px;
   line-height: 1.88;
   color: var(--text-color);
