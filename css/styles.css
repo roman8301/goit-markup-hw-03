@@ -17,6 +17,7 @@ html {
   --white-color: #fff;
   --primary-text-color: #212121;
   --text-color: #757575;
+  --gallary-card: #eee;
 }
 
 body {
@@ -45,7 +46,7 @@ p {
 }
 
 .container {
-  width: 1200px;
+  width: 1230px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -316,16 +317,9 @@ p {
   margin-bottom: 50px;
 }
 
-.section-title {
-  display: none;
-}
-
 .filter-list {
   display: flex;
   justify-content: center;
-}
-
-.filter .item {
 }
 
 .filter .item:not(:last-child) {
@@ -359,8 +353,38 @@ p {
 }
 
 /* gallary */
+.gallary-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallary .item {
+  width: calc((100%-60px) / 3);
+
+  padding-bottom: 20px;
+  border: 1px solid var(--gallary-card);
+}
+
+.gallary .item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.gallary .item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+.gallary .img {
+  margin-bottom: 20px;
+}
+
+.gallary .title,
+.gallary .description {
+  padding-left: 24px;
+}
 
 .gallary .title {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
